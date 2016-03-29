@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1459216224 source:c:\users\owner\desktop\work\gr 12 comp sci\huffman_compression\main.cpp
+	"Huffman_Compression.h"
+	<fstream>
+
+1459216162 source:c:\users\owner\desktop\work\gr 12 comp sci\huffman_compression\functions.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+	"Huffman_Compression.h"
+
+1459190772 c:\users\owner\desktop\work\gr 12 comp sci\huffman_compression\huffman_compression.h
+	<iostream>
+	<string>
+

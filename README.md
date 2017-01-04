@@ -1,5 +1,5 @@
 # Huffman-Compression
-Implemented Hufman Compression (simple version of WinRar/WinZip) using C++.
+Implemented Hufman Compression (simple version of WinRar/WinZip) using C++. A linked list of characters and their count in the text file is created, sorted by the count. The two smallest items in the list are merged into a tree, the smaller being the left child, and the parent node holding a null character value with a count equal to the two children summed. The parent is re-inserted into the list. This process is done until there is just one large tree left. Each character is converted to the binary equivalent of the ASCII decimal equivalent, using a search through the binary tree (to the left concatenates a 0 to the character code, to the right adds a 1). A large string is made using the binary codes in place of the characters, which is then parsed into 8 bits and outputted as the character equivalent of the decimal equivalent of those 8 0's and 1's. A header is added to the file to give the code for each character. To decompress, the header is used to re-build the tree, and the compressed text is turned into binary. The tree is then navigated using the 0=left, 1=right method, and once a leaf is reached, that character is put into the decompressed file, and the navigation is returned to the parent node.
 
 Started April 2015, completed June 2015.
 
